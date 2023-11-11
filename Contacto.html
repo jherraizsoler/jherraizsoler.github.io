@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="Es-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descripción" content="Pagina web Tambor Semana santa Zaragoza">
+    <link rel="shortcut icon" href="Icon_Drum.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title> TamborJH</title>
+
+</head>
+<body>
+    <div id="body_MAX">   
+        <!-- Etiqueta Header -> Tiene datos que son de alta relevancia par el navegador -->
+        <header>
+            <img id="logo_h" src="Icon_Drum.jpg" alt="Logo pagina web TamborJH">
+            <h1 id="titulo_h">Tambor JH Valores de Semana santa</h1>
+            <nav id="menu_pw">
+                <a href="presentacion.html">BLOG</a>
+                <a href="Contacto.html">CONTACTO</a>
+            </nav>
+            <a id="logo_casa" href="index.html"><img src="casa_morada2.png" alt="Simbolo de una casa morada que te envia a la pagina principal del sitio web"></a>
+        </header>
+        <h1>Contacto</h1>
+        <form action="" method="get">
+            <!-- https://datos.php  --> 
+            
+            <fieldset>
+                Utilizar con el proposito de ponerse en contacto conmigo Jorge Herraiz
+                <legend>Formulario de contacto</legend>
+                <br>
+                <br>
+            <label for="">¿Cual es tu nombre? </label>
+            <input type="text" required minlength="3" maxlength="15" size="11"/>
+            <br>
+            <br>
+            <label for="">¿De que cofradia perteneces?</label>
+            <!-- Selecciona una opción de esta seleccion interactiva-->
+            <select name="" id="">
+                <option value="1">Nazarenos</option>
+                <option value="2">Calvario</option>
+                <option value="3">Descendimiento</option>
+                <option value="4">Resucitados</option>
+                <option value="5">etc</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Seleciona que colores te gustan:</label>
+
+            <label for="">¿Eres hombre o mujer?</label>
+            <label for="">Hombre</label>
+            <input type="radio" name="1" id="hombre">
+            <label for="">Mujer</label>
+            <input type="radio" name="1" id="mujer">
+
+            <br>
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+            
+            <br>
+            <br>
+            <label for="">Asunto de contacto</label>
+            <input type="checkbox" name="1" id="Reunión">
+            <label for="">Reunión</label>
+            <input type="checkbox" name="1" id="Proyecto">
+            <label for="">Proyecto</label>
+            <input type="checkbox" name="1" id="Consulta">
+            <label for="">Consulta</label>
+            <br>
+            <br>
+            <label for="">Inserta un numero: (Nivel de urgencia)</label>
+            <input type="number" name="1" id="numero" min="1" max="10">
+            <br>
+            <br>
+            <label for="">Inserta un color</label>  
+            <input type="color" name="" id="">  
+            <br>
+            <br>
+            <label for="">¿Que fecha es hoy?: </label>
+            <input type="date" name="" id="">
+            <br>
+            <br>
+            <label for="">Sube una imagen o archivo</label>
+            <input type="image" src="" alt="">
+            <input type="file" name="" id="">
+            <br>
+            <br>
+            <label for="">Valora la pagina web: </label>
+            <input type="range" name="" id="" min="0" max="10">
+            <br>
+            <br>
+            <label for="">Responde Si o No a si estas conforme con este formulario: </label>
+            <input type="text" name="respuesta" id=""  value="Si" required minlength="2" maxlength="2" size="5" >
+            <br>
+            <br>
+            <p id="demo"  >-------- Formulario no enviado  --------------</p>
+            <button  type="button" onclick="document.getElementById('demo').innerHTML = '-------- FORMULARIO ENVIADO  --------------'">Enviar</button>
+            <button  type="reset" onclick="document.getElementById('demo').innerHTML = '-------- Formulario no enviado  --------------'">Limpiar Formulario</button>
+            </fieldset>
+            
+
+
+
+
+
+            
+
+            
+
+
+
+        </form>
+        <br>
+        <br>
+        <iframe src="https://www.soydezaragoza.es/fechas-semana-santa-zaragoza/" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width="800px" allowfullscreen></iframe>
+            <br>
+            <br>
+            <code>if(nombre > resultado.lenght{
+                System.out.println("Buenos días " + nombre);    
+            })</code>
+            <br>
+            <code>
+                #include main() { for(;;) { printf ("Hello World!\n"); } }
+            </code>
+            <br>
+
+        <footer id="footer_Contacto"> &#169; 2023 - &#8734; Creado por <u>Jorge Herraiz</u> </footer>
+    </div>
+</body>
+</html>
