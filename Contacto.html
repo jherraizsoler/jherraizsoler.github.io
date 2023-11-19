@@ -15,23 +15,30 @@
         <!-- Etiqueta Header -> Tiene datos que son de alta relevancia par el navegador -->
         <div class="arriba"> 
             <marquee id="textMovil" behavior="holaa" direction="">La vida esta para disfrutar hacerme caso ;) </marquee>
-            <div id="header_casa"> 
-                <header class="texture">
-                    <div id="titulo_logo"> 
-                        <img id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
+           
+                <header class="textura">
+                    <div id="titulo_logo">
+                        <img class="radius-img" id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
                         <h1 id="titulo_h">Tambor JH Valores de Semana santa</h1>
                     </div>
-
+    
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="menu-icon"><img src="icono_menu.png" alt=""></i>
+                    </label>
                     <nav id="menu_pw">
-                        <a href="presentacion.html">BLOG</a>
-                        <a href="Contacto.html">CONTACTO</a>
+                        <a id="primer_enlace_menu_principal" href="presentacion.html">BLOG</a>
+                        <a class="menu_pw_margen_left" href="Contacto.html">CONTACTO</a>
+                        <a class="menu_pw_margen_left" href="maquetacion.html">MAQUETACIÓN</a>
                     </nav>
                 </header>
                 <div id="lCasa">
                     <a id="logo_casa" href="index.html"><img src="casa_morada2.png" alt="Simbolo de una casa morada que te envia a la pagina principal del sitio web"></a>
                 </div>
-            </div>
         </div>
+    </div>
+
+    <main id="dentro_body">
         <h1>Contacto</h1>
         <form action="" method="get">
             <!-- https://datos.php  --> 
@@ -42,12 +49,12 @@
                 <br>
                 <br>
             <label for="">¿Cual es tu nombre? </label>
-            <input type="text" required minlength="3" maxlength="15" size="11"/>
+            <input class="input-radius" type="text" required minlength="3" maxlength="15" size="11"/>
             <br>
             <br>
             <label for="">¿De que cofradia perteneces?</label>
             <!-- Selecciona una opción de esta seleccion interactiva-->
-            <select name="" id="">
+            <select class="input-radius" name="" id="">
                 <option value="1">Nazarenos</option>
                 <option value="2">Calvario</option>
                 <option value="3">Descendimiento</option>
@@ -56,7 +63,6 @@
             </select>
             <br>
             <br>
-            <label for="">Seleciona que colores te gustan:</label>
 
             <label for="">¿Eres hombre o mujer?</label>
             <label for="">Hombre</label>
@@ -67,47 +73,47 @@
             <br>
             <br>
             <label for="email">Correo electronico</label>
-            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+            <input class="input-radius" type="email" id="email" pattern=".+@example\.com" size="30" required />
             
             <br>
             <br>
             <label for="">Asunto de contacto</label>
-            <input type="checkbox" name="1" id="Reunión">
+            <input class="input-radius" type="checkbox" name="1" id="Reunión">
             <label for="">Reunión</label>
-            <input type="checkbox" name="1" id="Proyecto">
+            <input class="input-radius" type="checkbox" name="1" id="Proyecto">
             <label for="">Proyecto</label>
-            <input type="checkbox" name="1" id="Consulta">
+            <input class="input-radius" type="checkbox" name="1" id="Consulta">
             <label for="">Consulta</label>
             <br>
             <br>
             <label for="">Inserta un numero: (Nivel de urgencia)</label>
-            <input type="number" name="1" id="numero" min="1" max="10">
+            <input class="input-radius" type="number" name="1" id="numero" min="1" max="10">
             <br>
             <br>
             <label for="">Inserta un color</label>  
-            <input type="color" name="" id="">  
+            <input class="input-radius" type="color" name="" id="">  
             <br>
             <br>
             <label for="">¿Que fecha es hoy?: </label>
-            <input type="date" name="" id="">
+            <input class="input-radius" type="date" name="" id="">
             <br>
             <br>
             <label for="">Sube una imagen o archivo</label>
-            <input type="image" src="" alt="">
-            <input type="file" name="" id="">
+            <input class="input-radius" type="image" src="" alt="">
+            <input class="input-radius" type="file" name="" id="">
             <br>
             <br>
             <label for="">Valora la pagina web: </label>
-            <input type="range" name="" id="" min="0" max="10">
+            <input class="input-radius" type="range" name="" id="" min="0" max="10">
             <br>
             <br>
             <label for="">Responde Si o No a si estas conforme con este formulario: </label>
-            <input type="text" name="respuesta" id=""  value="Si" required minlength="2" maxlength="2" size="5" >
+            <input class="input-radius" type="text" name="respuesta" id=""  value="Si" required minlength="2" maxlength="2" size="5" >
             <br>
             <br>
             <p id="demo"  >-------- Formulario no enviado  --------------</p>
-            <button  type="button" onclick="document.getElementById('demo').innerHTML = '-------- FORMULARIO ENVIADO  --------------'">Enviar</button>
-            <button  type="reset" onclick="document.getElementById('demo').innerHTML = '-------- Formulario no enviado  --------------'">Limpiar Formulario</button>
+            <button  class="input-radius"  type="button" onclick="document.getElementById('demo').innerHTML = '-------- FORMULARIO ENVIADO  --------------'">Enviar</button>
+            <button  class="input-radius" type="reset" onclick="document.getElementById('demo').innerHTML = '-------- Formulario no enviado  --------------'">Limpiar Formulario</button>
             </fieldset>
             
 
@@ -125,7 +131,7 @@
                 #include main() { for(;;) { printf ("Hello World!\n"); } }
             </code>
             <br>
-
+    </main>
         <footer id="footer_Contacto"> &#169; 2023 - &#8734; Creado por <u>Jorge Herraiz</u> </footer>
     </div>
 </body>

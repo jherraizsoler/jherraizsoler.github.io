@@ -11,26 +11,32 @@
 </head>
 
 <body> 
-    <div class="body_MAX">
+    <main class="body_MAX">
+        
         <div class="arriba">
             <marquee id="textMovil" behavior="holaa" direction="">La vida esta para disfrutar hacerme caso ;) </marquee>
             <header class="textura">
                 <div id="titulo_logo">
-                    <img id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
+                    <img class="radius-img" id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
                     <h1 id="titulo_h">Tambor JH Valores de Semana santa</h1>
                 </div>
-                
+
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="icono_menu.png" alt=""></i>
+                </label>
                 <nav id="menu_pw">
-                    <a href="presentacion.html">BLOG</a>
-                    <a href="Contacto.html">CONTACTO</a>
+                    <a id="primer_enlace_menu_principal" href="presentacion.html">BLOG</a>
+                    <a class="menu_pw_margen_left" href="Contacto.html">CONTACTO</a>
+                    <a class="menu_pw_margen_left" href="maquetacion.html">MAQUETACIÓN</a>
                 </nav>
             </header>
         </div>
-        
+       
 
-        <div id="dentro_body">
-            <br>
-            <h2>Anclas de la pagina web: </h2>
+
+        <aside id="menu_anclas">
+            <!-- <h2>Anclas de la pagina web: </h2> -->
             <nav id="guias_index">
                 <a href="#a1">Punto 1</a>
                 <a href="#a2">Punto 2</a>
@@ -43,9 +49,14 @@
                 <a href="#a9">Punto 9</a>
                 <a href="#a10">Punto 10</a>
             </nav>
-            <br>
-            <h4>Valores y ganas por el <font size="5" color="Red" face=>tambor</font> y la Semana santa:</h4>
-            <img class="img_efecto" src="pregonSemanaSanta2022.jpeg" width=80% height=44%
+        </aside>
+
+        
+        
+
+        <div id="dentro_body">
+            <h4 id="titulo1_Importante">Valores y ganas por el <font size="5" color="Red" face=>tambor</font> y la Semana santa:</h4>
+            <img class="img_efecto img-radius" src="pregonSemanaSanta2022.jpeg" width=80% height=44%
                 alt="Pregon Semana Santa 2022 en San Cayetano cofrades vestidos con sus habitos capirotes y terceroles con sus colores correspondientes a cada Cofradia.">
             <br>
             <a id="a1"> &#129680; Punto 1</a>
@@ -62,12 +73,13 @@
             </audio>
             
             <!-- Primer forma para poder el audio de fondo-->
-            <audio autoplay loop> 
-                <source src="tocandoTambor.mp3"  type="audio/mpeg">
-            </audio>
+            <!-- <audio autoplay loop> 
+                    <source src="tocandoTambor.mp3"  type="audio/mpeg">
+                </audio>
+            -->
+
             <!-- Segunda forma para poder el audio de fondo-->
-            <embed src="tocandoTambor.mp3" loop="true" autostart="true" width="2" height="0">
-            
+            <!-- <embed src="tocandoTambor.mp3" loop="true" autostart="true" width="2" height="0"/>  -->
             
             <div id="listas">
                 <h2>Valores de la Semana Santa</h2>
@@ -110,7 +122,7 @@
             <br>
             <br>
             <br>
-            <img class="img_efecto" src="https://imagenes.heraldo.es/files/image_990_v3/uploads/imagenes/2022/04/09/procesion-del-pregon-en-zaragoza-64.jpeg" width="40%" height="5%"
+            <img class="img_efecto img-radius" src="https://imagenes.heraldo.es/files/image_990_v3/uploads/imagenes/2022/04/09/procesion-del-pregon-en-zaragoza-64.jpeg" width="40%" height="5%"
                 alt="Una imagen en la que se puede ver a varios cofrades tocando el bombo, tambores y vestidos con sus habitos y capirotes y terceroles en San Cayetano.">
             <br>
             <!--  <pre>
@@ -128,7 +140,7 @@
             <h3>Utilizo un texto h3</h3>
             <h6>Utilizo un texto h6</h6>
 
-            <a id="a6"> &#129680; Punto 6</a>
+            <a id="a6"> &#129680; Punto 6</a> 
             <p>Listo en la palabra tambor</p>
 
             <a id="a7"> &#129680; Punto 7</a>
@@ -157,7 +169,7 @@
             <h4> &#129680; Punto 9</h4>
             <br>
 
-            <a href="https://www.youtube.com/watch?v=nuL_g00lyDA"><img class="img_efecto" id="a9" src="maxresdefault.jpg" width="60%" height="50%"
+            <a href="https://www.youtube.com/watch?v=nuL_g00lyDA"><img class="img_efecto img-radius" id="a9" src="maxresdefault.jpg" width="60%" height="50%"
                 alt="Imagen Cuadrilla de 24 personas de la cofradia de los Nazarenos en el principe felipe por el concurso que se celebra."
                 type="img.jpg" /></a>   
             <br>
@@ -174,7 +186,7 @@
 
             <h2>Concurso - Exaltación 2022 Nazarenos</h2>
             
-            <iframe width="30%" height="50%" src="https://www.youtube.com/embed/M3UZsUhhR4g?si=DX3hnGWfcVRWFebl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="60%" height="350px" src="https://www.youtube.com/embed/M3UZsUhhR4g?si=DX3hnGWfcVRWFebl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <table id="a10" border="1">
                 <tr>
                     <td>8:30</td>
@@ -223,8 +235,9 @@
             <br>
             <br>
         </div>
-            <footer> &#169; 2023 - &#8734; Creado por <u>Jorge Herraiz</u> </footer>
-    </div>
+            
+    </main>
+    <footer> &#169; 2023 - &#8734; Creado por <u>Jorge Herraiz</u> </footer>
 </body>
 
 

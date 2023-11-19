@@ -15,29 +15,47 @@
         <!-- Etiqueta Header -> Tiene datos que son de alta relevancia par el navegador -->
         <div class="arriba"> 
             <marquee id="textMovil" behavior="holaa" direction="">La vida esta para disfrutar hacerme caso ;) </marquee>
-            <div id="header_casa"> 
-                <header class="texture">
-                    <div id="titulo_logo"> 
-                        <img id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
+           
+                <header class="textura">
+                    <div id="titulo_logo">
+                        <img class="radius-img" id="logo_h" src="imagenes_tambor/logo pagina web LM 1eva.svg" alt="Logo pagina web TamborJH">
                         <h1 id="titulo_h">Tambor JH Valores de Semana santa</h1>
                     </div>
-
+    
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="menu-icon"><img src="icono_menu.png" alt=""></i>
+                    </label>
                     <nav id="menu_pw">
-                        <a href="presentacion.html">BLOG</a>
-                        <a href="Contacto.html">CONTACTO</a>
+                        <a id="primer_enlace_menu_principal" href="presentacion.html">BLOG</a>
+                        <a class="menu_pw_margen_left" href="Contacto.html">CONTACTO</a>
+                        <a class="menu_pw_margen_left" href="maquetacion.html">MAQUETACIÓN</a>
                     </nav>
                 </header>
                 <div id="lCasa">
                     <a id="logo_casa" href="index.html"><img src="casa_morada2.png" alt="Simbolo de una casa morada que te envia a la pagina principal del sitio web"></a>
                 </div>
-            </div>
         </div>
     </div>
+    <main id="dentro_body">
 
-        <h1>¿Quien soy yo?</h1>
-        <p>Yo soy un chico que busca poder emprender a base de mis conocimientos y en lo que voy conociendo.</p>
-
+        <article id="quienSoyYo">
+            <h1>¿Quien soy yo?</h1>
+            <div>
+                <div>
+                    <p>Yo soy un chico que busca poder emprender a base de mis conocimientos y en lo que voy conociendo.</p>
+                        <fieldset id="fieldset1">
+                            <legend>Valores</legend>
+                            <ol>
+                                <li>Vida</li>
+                            </ol>
+                        </fieldset>
+                </div>
+                <img src="cara_JH.jpeg" alt="Foto de Jorge Herraiz sonriendo a la cámara.">
+            </div>
+           
+        </article>
+    </main>
         <footer> &#169; 2023 - &#8734; Creado por <u>Jorge Herraiz</u> </footer>
-    </div>
 </body>
 </html>
